@@ -18,7 +18,7 @@
 - `src/battleground/simulator.py` — 自有 Monte Carlo 模拟器
 - `tests/test_combat.py` — 26 tests
 
-### S1.5: Firestone 桥接 ✅ (DARF 审查通过)
+### S1.5: Firestone 桥接 ✅
 - `src/battleground/bridge/bridge.js` — Node.js 持久进程，JSON-lines 协议
 - `src/battleground/bridge/firestone.py` — Python 封装 (FirestoneSimulator)
 - `tests/test_bridge.py` — 15 tests
@@ -237,7 +237,6 @@ battleground/
 │   ├── test_state.py               # 15 tests
 │   ├── test_battle_api.py          # 33 tests
 │   └── test_integration_battle_api.py
-├── darf-workspace/                 # DARF 审查记录
 └── docs/
     └── PLAN.md                     # 本文件
 ```

@@ -64,13 +64,23 @@ class SimulationResult:
     def tie_rate(self) -> float:
         return self.ties / self.total if self.total else 0.0
 
+    # Firestone pre-computed values (set by bridge, not by our engine)
+    _firestone_avg_win_dmg: float = 0.0
+    _firestone_avg_loss_dmg: float = 0.0
+    _firestone_lethal_win: float = 0.0
+    _firestone_lethal_loss: float = 0.0
+
     @property
     def avg_win_damage(self) -> float:
-        return sum(self.win_damages) / len(self.win_damages) if self.win_damages else 0.0
+        if self.win_damages:
+            return sum(self.win_damages) / len(self.win_damages)
+        return self._firestone_avg_win_dmg
 
     @property
     def avg_loss_damage(self) -> float:
-        return sum(self.loss_damages) / len(self.loss_damages) if self.loss_damages else 0.0
+        if self.loss_damages:
+            return sum(self.loss_damages) / len(self.loss_damages)
+        return self._firestone_avg_loss_dmg
 
     def summary(self) -> str:
         return (

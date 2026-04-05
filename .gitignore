@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Generated data / large assets
+data/cards_cache.json
+data/card_images/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Tool caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Internal research logs
+darf-workspace/
+
+# Claude Code
+.claude/
+
+# macOS
+.DS_Store
+
+# Environment / secrets
+.env
+.env.*

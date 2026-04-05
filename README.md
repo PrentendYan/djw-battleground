@@ -201,6 +201,12 @@ python -m pytest tests/ --cov=src/battleground --cov-report=term-missing
 └─────────────┘     └──────────────┘
 ```
 
+## Disclaimer
+
+This project is a fan-made educational tool and is **not affiliated with or endorsed by Blizzard Entertainment**. Hearthstone and Hearthstone Battlegrounds are trademarks of Blizzard Entertainment, Inc. All game content and materials are the property of their respective owners.
+
+Card data is not included in this repository and must be generated at runtime via the [Firestone](https://github.com/nicholasgasior/firestone-hs) engine (GPL-3.0). The Firestone engine is called as a separate process and is not linked or bundled with this project.
+
 ## License
 
-Private project.
+[MIT](LICENSE)

@@ -1,0 +1,20 @@
+{
+  "name": "battleground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@firestone-hs/reference-data": "^3.0.183",
+    "@firestone-hs/simulate-bgs-battle": "^1.1.695"
+  }
+}

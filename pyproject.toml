@@ -1,0 +1,18 @@
+[project]
+name = "battleground"
+version = "0.1.0"
+description = "Hearthstone Battlegrounds Combat Simulator"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-cov>=5.0"]
+ui = ["streamlit>=1.30", "plotly>=5.18"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"

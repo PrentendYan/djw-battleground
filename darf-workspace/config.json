@@ -1,0 +1,13 @@
+{
+  "task": "接入 Firestone npm 包作为酒馆战棋模拟后端",
+  "mode": "standard",
+  "codex_model": "o3-mini",
+  "phases": [
+    {"id": 1, "name": "research", "desc": "安装 Firestone npm，理解 API 格式，手动验证"},
+    {"id": 2, "name": "design", "desc": "Node.js 持久子进程桥接层架构设计"},
+    {"id": 3, "name": "implement", "desc": "Node bridge + Python wrapper + 卡牌元数据生成"},
+    {"id": 4, "name": "validate", "desc": "集成测试 + 与自有引擎交叉验证"},
+    {"id": 5, "name": "report", "desc": "总结变更，性能基准"}
+  ],
+  "created": "2026-04-04T22:00:00"
+}
